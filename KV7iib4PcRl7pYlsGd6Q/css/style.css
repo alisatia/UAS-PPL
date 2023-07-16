@@ -1,0 +1,241 @@
+/* ---- RESET/BASIC STYLING ---- */
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+input[type="number"] {
+    -moz-appearance: textfield;
+}
+
+
+.container{
+    width: 100%;
+    height: 100vh;
+    display: grid;
+    grid-template-rows: 40px auto;
+    padding: 70px;
+}
+
+.header{
+    display: flex;
+}
+
+.border{
+    border: 1px solid #0054a3;
+    padding: 10px;
+    border-top-right-radius: 7px;
+    border-top-left-radius: 7px;
+    color: white;
+    background-color: #0054a3;
+    font-weight: bold;
+    margin-bottom: -2px;
+    border-bottom: 1px solid #0054a3;
+    opacity: 0.5;
+    z-index: 1;
+    transition: 0.5s;
+    margin-right: 1px;
+}
+
+.border:hover{
+    cursor: pointer;
+}
+
+.content{
+    height: 100%;
+    border: 1px solid #0077B5;
+    padding: 30px;
+    border-radius: 10px;
+}
+
+.barang{
+    transition: 0.5s;
+    color: #0054a3;
+    margin-left: 10px;
+    border-bottom: 1px solid white;
+    background-color: white;
+    opacity: 1;
+}
+
+#barang{
+    display: block;
+}
+
+#penjualan{
+    display: none;
+}
+
+#baru{
+    display: none;
+}
+
+/* FORM PENGINPUTAN PENJUALAN */
+.form-baru{
+    width: 90%;
+    height: auto;
+    margin: auto;
+    border: 1px solid #0054a3;
+    border-radius: 5px;
+    padding: 25px;
+    border-bottom: 1px solid #0054a3;
+    margin-bottom: 10px;
+    padding-bottom: 25px;
+}
+
+.form-baru .simpan{
+    background-color: #0054a3;
+    color: white;
+    font-weight: bold;
+    padding: 7px;
+    border-radius: 5px;
+    transition: 0.5s;
+}
+
+.form-baru .simpan:hover{
+    cursor: pointer;
+    transform: scale(1.05);
+}
+
+.form-baru input, select{
+    border-radius: 10px;
+    background-color: #a6bcd4;
+    width: 100%;
+    height: 30px;
+    padding: 5px;
+}
+
+#produks{
+    display: none;
+}
+
+.form-baru .col1{
+    width: 10%;
+}
+
+.form-baru .col2{
+    width: 25%;
+}
+
+.form-baru .col3{
+    width: 8%;
+}
+
+.form-baru .col4{
+    width: 5%;
+}
+
+.form-baru .col5{
+    width: 7%;
+}
+
+.form-baru .col6{
+    width: 15%;
+}
+
+.form-baru .col8{
+    width: 10%;
+}
+
+.form-baru .col9{
+    width: 7%;
+}
+
+.form-baru .col10{
+    width: 7%;
+}
+
+/* TABEL ALL */
+table {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+th, td {
+    text-align: left;
+    padding: 5px;
+}
+
+tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+th {
+    background-color: #4CAF50;
+    color: white;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+td{
+    border-bottom: 1px solid #FFDAB9;
+}
+
+input{
+    border: none;
+    background: none;
+}
+
+input:focus{
+    outline: none;
+}
+
+.update{
+    background-color: #0077B5;
+    color: white;
+    font-weight: bold;
+    padding: 10px;
+    border-radius: 7px;
+    transition: 0.3s;
+}
+
+.update:hover{
+    cursor: pointer;
+    transform: scale(1.05);
+}
+
+h2{
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+    border-bottom: 1px solid #0054a3;
+}
+
+/* Style untuk dropdown */
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+#input2 {
+    margin-top: 10px;
+    padding: 10px;
+    width: 200px;
+    font-size: 16px;
+}
+
+#tableBuku{
+    display: none;
+}
