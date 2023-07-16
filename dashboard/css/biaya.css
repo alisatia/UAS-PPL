@@ -1,0 +1,1087 @@
+@import url("https://fonts.googleapis.com/css?family=Montserrat");
+
+* {
+  padding: 0;
+  margin: 0;
+  font-family: "Montserrat";
+  box-sizing: border-box;
+}
+
+:root {
+  --primary-color: #0054a3;
+  --secondary-color: #fdfdfd;
+  --tertiary-color: #e9ecf8;
+  --quaternary-color: rgba(157, 157, 157, 1);
+  --quinary-color: #9d9d9d;
+}
+
+.child-biaya {
+  width: 100%;
+  height: calc(100% - 28px);
+  display: none;
+  grid-template-columns: 300px 1fr 1fr;
+  column-gap: 10px;
+}
+
+.cover-biaya {
+  display: grid;
+  grid-template-rows: calc(100% / 2) calc(100% / 5);
+  row-gap: 10px;
+}
+
+.judul-biaya {
+  display: grid;
+  border-radius: 7px;
+  box-shadow: 1px 1px 0px #9d9d9d;
+  background-color: var(--secondary-color);
+  padding: 10px;
+}
+
+.judul-biaya img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+#hitung {
+  background-color: #0054a3;
+  color: white;
+  width: 150px;
+  height: 100%;
+  justify-self: end;
+  border-radius: 7px;
+  border: 1px solid #0054a3;
+  padding: 0 0 5px 5px;
+  text-align: center;
+  cursor: pointer;
+  transition: 0.7s;
+  transform-origin: top left;
+  transform: scale(1);
+}
+#hitung:hover {
+  transform: scale(1.03);
+}
+#qtybuku::placeholder {
+  color: rgb(184, 184, 184);
+  opacity: 1; /* Firefox */
+}
+
+#qtybuku:-ms-input-placeholder {
+  /* Internet Explorer 10-11 */
+  color: rgb(184, 184, 184);
+}
+
+#qtybuku::-ms-input-placeholder {
+  /* Microsoft Edge */
+  color: rgb(184, 184, 184);
+}
+
+#boxcatkul div {
+  margin-top: 10px;
+  font-size: medium;
+  color: #0054a3;
+  font-weight: bold;
+}
+#boxcatkul p {
+  font-size: small;
+  color: #0054a3;
+}
+#childBiaya #cover #total {
+  background-color: white;
+  border-radius: 7px;
+  box-shadow: 1px 1px 0px #9d9d9d;
+  display: grid;
+}
+#childBiaya #cover #total #childtot {
+  width: 80%;
+  height: 70%;
+  align-self: center;
+  justify-self: center;
+  display: grid;
+  grid-template-rows: 1fr 1fr 1fr;
+}
+#childtot #totbuku {
+  font-size: small;
+  font-weight: bold;
+  display: grid;
+  grid-template-columns: 1fr 3px 1fr;
+  align-items: end;
+}
+#childtot #eksbuku {
+  font-size: small;
+  display: grid;
+  grid-template-columns: 1fr 3px 1fr;
+  align-items: center;
+}
+#childBiaya #p3 {
+  justify-self: end;
+}
+#childBiaya #totalbiaya {
+  justify-self: end;
+}
+#childtot #pajak {
+  font-size: small;
+  display: grid;
+  grid-template-columns: 1fr 15px 1.5fr;
+  align-items: start;
+}
+#childtot #pajak #spajak {
+  border: none;
+  width: 150px;
+  box-sizing: border-box;
+  transition: 0.7s;
+  background: none;
+}
+#childtot #pajak img {
+  position: relative;
+  width: 15px;
+}
+
+.list-biaya {
+  box-sizing: border-box;
+  background-color: var(--secondary-color);
+  border-radius: 7px;
+  box-shadow: 1px 1px 2px var(--quaternary-color);
+  display: grid;
+  align-items: center;
+  justify-items: center;
+}
+
+.box-biaya {
+  height: 90%;
+  width: 85%;
+  display: grid;
+  grid-template-rows: repeat(11, 1fr) 1.5fr;
+}
+
+.box-biaya div {
+  display: grid;
+  grid-template-columns: 120px 10px auto;
+  font-size: small;
+  align-self: center;
+  box-sizing: border-box;
+}
+
+.box-biaya div label {
+  align-self: center;
+}
+
+.box-biaya div input {
+  border: none;
+  border-bottom: 1px solid #0054a3;
+  padding: 5px;
+  transition: 0.7s;
+}
+
+.box-biaya div input::placeholder {
+  color: rgb(184, 184, 184);
+  opacity: 1;
+}
+
+.box-biaya div input:hover {
+  background-color: #f0f0f0;
+  cursor: pointer;
+}
+
+.box-biaya div select {
+  border: none;
+  background: none;
+  border-bottom: 1px solid #0054a3;
+  padding: 5px;
+  transition: 0.7s;
+  color: rgb(184, 184, 184);
+}
+
+.box-biaya div select:hover {
+  background-color: #f0f0f0;
+  cursor: pointer;
+}
+
+.simulasi-buku {
+  background-color: var(--secondary-color);
+  border-radius: 7px;
+  box-shadow: 1px 1px 2px var(--quaternary-color);
+  display: grid;
+}
+
+.review-buku {
+  height: 90%;
+  width: 90%;
+  justify-self: center;
+  align-self: center;
+  display: grid;
+  grid-template-columns: 1fr 40px 3fr;
+  grid-template-rows: 40px 1fr 40px 80px;
+  grid-template-areas:
+    "judulp judulp judulp"
+    "punggung ukuran-3 depan-buku"
+    "ukuran-1 kosong ukuran-2"
+    "harga-buku harga-buku harga-buku";
+}
+
+.hanya {
+  grid-area: judulp;
+  justify-self: center;
+  font-weight: bold;
+  text-align: center;
+  color: #0054a3;
+}
+
+hjk {
+  color: blue;
+}
+
+hjk:hover {
+  text-decoration: underline;
+}
+
+.review-buku .punggung {
+  grid-area: punggung;
+  display: grid;
+}
+
+.punggung-buku {
+  border: 1px solid #9d9d9d;
+  box-sizing: border-box;
+  box-shadow: 2px 2px 2px #9d9d9d;
+  width: 50px;
+  height: 400px;
+  justify-self: center;
+  align-self: center;
+  display: grid;
+  grid-template-rows: 60px 1fr 50px;
+  color: black;
+  background-color: white;
+}
+
+.punggung-buku-inisial {
+  font-weight: 900;
+  font-size: large;
+  justify-self: center;
+  align-self: flex-start;
+  margin-top: 15px;
+}
+
+.punggung-buku .punggung-buku-judul {
+  font-weight: bold;
+  font-size: medium;
+  justify-self: center;
+  align-self: center;
+  writing-mode: vertical-rl;
+  text-orientation: mixed;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  max-height: 100%;
+}
+
+.review-buku .depan-buku {
+  grid-area: depan-buku;
+  display: grid;
+}
+
+.cover-buku {
+  border: 1px solid #9d9d9d;
+  box-sizing: border-box;
+  box-shadow: 2px 2px 2px #9d9d9d;
+  width: 280px;
+  height: 400px;
+  justify-self: center;
+  align-self: center;
+  display: grid;
+  grid-template-rows: 80px 1fr 3fr;
+  background-image: url(../../assets/template-buku.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: right;
+  color: black;
+}
+
+.cover-buku-judul {
+  width: 80%;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  font-size: large;
+  margin-left: 15%;
+  font-weight: 900;
+}
+
+.cover-buku .cover-buku-penulis {
+  width: 80%;
+  margin-top: 10px;
+  margin-left: 15%;
+  font-size: small;
+  align-self: center;
+}
+
+.review-buku .harga-buku {
+  grid-area: harga-buku;
+  padding-top: 15px;
+  padding-left: 30px;
+  display: grid;
+  grid-template-columns: 120px auto;
+}
+
+.review-buku .ukuran-1 {
+  grid-area: ukuran-1;
+  display: grid;
+  grid-template-rows: 1fr 2fr;
+}
+
+.review-buku .ukuran-2 {
+  grid-area: ukuran-2;
+  display: grid;
+  grid-template-rows: 1fr 2fr;
+}
+
+.review-buku .ukuran-box-1 {
+  border-left: 1px solid #0054a3;
+  border-right: 1px solid #0054a3;
+  border-bottom: 1px solid #0054a3;
+  justify-self: center;
+  box-sizing: border-box;
+}
+
+.review-buku .ukuran-box-2 {
+  justify-self: center;
+  align-self: flex-end;
+}
+
+.review-buku .box-1-width {
+  width: 50px;
+}
+
+.box-2-width {
+  width: 290px;
+}
+
+.review-buku .ukuran-3 {
+  grid-area: ukuran-3;
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+}
+
+.ukuran-3 .ukuran-box-3 {
+  writing-mode: vertical-rl;
+  text-orientation: mixed;
+  transform: rotate(180deg);
+  align-self: center;
+  justify-self: start;
+}
+
+.ukuran-box-4 {
+  border-bottom: 1px solid #0054a3;
+  border-top: 1px solid #0054a3;
+  border-left: 1px solid #0054a3;
+  height: 400px;
+  align-self: center;
+}
+
+@media only screen and (max-width: 1600px) and (min-width: 766px) {
+  .child-biaya {
+    grid-template-columns: 1.3fr 2fr;
+    column-gap: 7px;
+    height: calc(100%);
+  }
+
+  .cover-biaya {
+    display: grid;
+    grid-template-rows: calc(100% / 2) calc(100% / 5);
+    row-gap: 10px;
+  }
+
+  #hitung {
+    font-size: 10px;
+  }
+
+  .judul-biaya img {
+    width: 75%;
+    height: 75%;
+    object-fit: contain;
+  }
+
+  .judul-biaya {
+    box-shadow: 1px 1px 2px var(--quaternary-color);
+    background-color: var(--secondary-color);
+    padding: 8x;
+  }
+
+  #boxcatkul div {
+    margin-top: 10px;
+    font-size: medium;
+    color: #0054a3;
+    font-weight: bold;
+  }
+
+  #boxcatkul p {
+    font-size: small;
+    color: #0054a3;
+  }
+
+  #childBiaya #cover #total {
+    background-color: white;
+    border-radius: 7px;
+    box-shadow: 1px 1px 0px #9d9d9d;
+    display: grid;
+  }
+
+  #childBiaya #cover #total #childtot {
+    width: 80%;
+    height: 70%;
+    align-self: center;
+    justify-self: center;
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr;
+  }
+
+  #childtot #totbuku {
+    font-size: 10px;
+    font-weight: bold;
+    display: grid;
+    grid-template-columns: 1fr 3px 1fr;
+    align-items: end;
+  }
+
+  #childtot #eksbuku {
+    font-size: 10px;
+    display: grid;
+    grid-template-columns: 1fr 3px 1fr;
+    align-items: center;
+  }
+
+  #childBiaya #p3 {
+    justify-self: end;
+  }
+
+  #childBiaya #totalbiaya {
+    justify-self: end;
+  }
+
+  #childtot #pajak {
+    font-size: 10px;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    align-items: start;
+  }
+
+  #childtot #pajak select {
+    font-size: 10px;
+  }
+
+  #childtot #pajak #spajak {
+    border: none;
+    width: auto;
+    box-sizing: border-box;
+    transition: 0.7s;
+    background: none;
+  }
+  #childtot #pajak img {
+    position: relative;
+    width: 15px;
+  }
+
+  .list-biaya {
+    box-sizing: border-box;
+    background-color: var(--secondary-color);
+    border-radius: 7px;
+    box-shadow: 1px 1px 2px var(--quaternary-color);
+    display: grid;
+    align-items: center;
+    justify-items: center;
+  }
+
+  .box-biaya {
+    height: 90%;
+    width: 90%;
+    display: grid;
+    grid-template-rows: repeat(11, 1fr) 1.5fr;
+  }
+
+  .box-biaya div {
+    display: grid;
+    grid-template-columns: 80px 10px auto;
+    font-size: 10px;
+    align-self: center;
+    box-sizing: border-box;
+  }
+
+  .box-biaya div label {
+    align-self: center;
+  }
+
+  .box-biaya div input {
+    border: none;
+    border-bottom: 1px solid #0054a3;
+    padding: 5px;
+    transition: 0.7s;
+    font-size: 10px;
+  }
+
+  .box-biaya div input::placeholder {
+    color: rgb(184, 184, 184);
+    opacity: 1;
+  }
+
+  .box-biaya div input:hover {
+    background-color: #f0f0f0;
+    cursor: pointer;
+  }
+
+  .box-biaya div select {
+    border: none;
+    background: none;
+    border-bottom: 1px solid #0054a3;
+    padding: 5px;
+    transition: 0.7s;
+    color: rgb(184, 184, 184);
+    font-size: 10px;
+  }
+
+  .box-biaya div select:hover {
+    background-color: #f0f0f0;
+    cursor: pointer;
+  }
+
+  .simulasi-buku {
+    background-color: var(--secondary-color);
+    border-radius: 7px;
+    box-shadow: 1px 1px 2px var(--quaternary-color);
+    display: none;
+  }
+
+  .review-buku {
+    height: 90%;
+    width: 90%;
+    justify-self: center;
+    align-self: center;
+    display: grid;
+    grid-template-columns: 0.8fr 30px 3fr;
+    grid-template-rows: 40px 0.9fr 30px 80px;
+    grid-template-areas:
+      "judulp judulp judulp"
+      "punggung ukuran-3 depan-buku"
+      "ukuran-1 kosong ukuran-2"
+      "harga-buku harga-buku harga-buku";
+  }
+
+  .review-buku .harga-buku {
+    font-size: 10px;
+    display: none;
+  }
+
+  .hanya {
+    grid-area: judulp;
+    justify-self: center;
+    font-weight: bold;
+    text-align: center;
+    color: #0054a3;
+    font-size: 10px;
+  }
+
+  hjk {
+    color: blue;
+  }
+
+  hjk:hover {
+    text-decoration: underline;
+  }
+
+  .review-buku .punggung {
+    grid-area: punggung;
+    display: grid;
+  }
+
+  .punggung-buku {
+    border: 1px solid #9d9d9d;
+    box-sizing: border-box;
+    box-shadow: 2px 2px 2px #9d9d9d;
+    width: 20px;
+    height: calc(100% / 1);
+    justify-self: center;
+    align-self: center;
+    display: grid;
+    grid-template-rows: 60px 1fr 50px;
+    color: black;
+    background-color: white;
+  }
+
+  .punggung-buku-inisial {
+    font-weight: 900;
+    font-size: large;
+    justify-self: center;
+    align-self: flex-start;
+    margin-top: 15px;
+  }
+
+  .punggung-buku .punggung-buku-judul {
+    font-weight: bold;
+    font-size: 12px;
+    justify-self: center;
+    align-self: center;
+    writing-mode: vertical-rl;
+    text-orientation: mixed;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    max-height: 100%;
+  }
+
+  .review-buku .depan-buku {
+    grid-area: depan-buku;
+    display: grid;
+  }
+
+  .cover-buku {
+    width: calc(100% / 1.3);
+    height: calc(100% / 1);
+    grid-template-rows: 50px 1fr 3fr;
+  }
+
+  .review-buku .ukuran-1 {
+    grid-area: ukuran-1;
+    display: grid;
+    grid-template-rows: 1fr 2fr;
+  }
+
+  .review-buku .ukuran-2 {
+    grid-area: ukuran-2;
+    display: grid;
+    grid-template-rows: 1fr 2fr;
+  }
+
+  .review-buku .ukuran-box-1 {
+    border-left: 1px solid #0054a3;
+    border-right: 1px solid #0054a3;
+    border-bottom: 1px solid #0054a3;
+    justify-self: center;
+    box-sizing: border-box;
+  }
+
+  .review-buku .ukuran-box-2 {
+    justify-self: center;
+    align-self: flex-end;
+    font-size: 10px;
+  }
+
+  .review-buku .box-1-width {
+    width: 50px;
+  }
+
+  .box-2-width {
+    width: calc(100% / 1.3);
+  }
+
+  .review-buku .ukuran-3 {
+    grid-area: ukuran-3;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+  }
+
+  .ukuran-3 .ukuran-box-3 {
+    writing-mode: vertical-rl;
+    text-orientation: mixed;
+    transform: rotate(180deg);
+    align-self: center;
+    justify-self: start;
+    font-size: 10px;
+  }
+
+  .ukuran-box-4 {
+    border-bottom: 1px solid #0054a3;
+    border-top: 1px solid #0054a3;
+    border-left: 1px solid #0054a3;
+    height: calc(100% / 1);
+    align-self: center;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .child {
+    margin-top: 5px;
+    height: calc(100% - 70px);
+  }
+  .child-biaya {
+    width: 100%;
+    height: calc(100% - 28px);
+    display: none;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto 0.7fr;
+    column-gap: 10px;
+    row-gap: 5px;
+    grid-template-areas:
+      "biaya"
+      "booky"
+      "simulasi";
+    overflow-x: auto;
+  }
+
+  .cover-biaya {
+    grid-area: booky;
+    display: grid;
+    grid-template-rows: calc(100vw / 3);
+    row-gap: 10px;
+  }
+
+  .judul-biaya {
+    display: grid;
+    display: none;
+    border-radius: 7px;
+    box-shadow: 1px 1px 0px #9d9d9d;
+    background-color: var(--secondary-color);
+    padding: 10px;
+  }
+
+  .judul-biaya img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  #hitung {
+    background-color: #0054a3;
+    color: white;
+    width: 150px;
+    height: 100%;
+    justify-self: end;
+    border-radius: 7px;
+    border: 1px solid #0054a3;
+    padding: 0 0 5px 5px;
+    text-align: center;
+    cursor: pointer;
+    transition: 0.7s;
+    transform-origin: top left;
+    transform: scale(1);
+    font-size: 10px;
+  }
+  #hitung:hover {
+    transform: scale(1.03);
+  }
+  #qtybuku::placeholder {
+    color: rgb(184, 184, 184);
+    opacity: 1; /* Firefox */
+  }
+
+  #qtybuku:-ms-input-placeholder {
+    /* Internet Explorer 10-11 */
+    color: rgb(184, 184, 184);
+  }
+
+  #qtybuku::-ms-input-placeholder {
+    /* Microsoft Edge */
+    color: rgb(184, 184, 184);
+  }
+
+  #boxcatkul div {
+    margin-top: 10px;
+    font-size: 10px;
+    color: #0054a3;
+    font-weight: bold;
+  }
+  #boxcatkul p {
+    font-size: 10px;
+    color: #0054a3;
+  }
+  #childBiaya #cover #total {
+    background-color: white;
+    border-radius: 7px;
+    box-shadow: 1px 1px 0px #9d9d9d;
+    display: grid;
+  }
+  #childBiaya #cover #total #childtot {
+    width: 80%;
+    height: 70%;
+    align-self: center;
+    justify-self: center;
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr;
+  }
+  #childtot #totbuku {
+    font-size: 10px;
+    font-weight: bold;
+    display: grid;
+    grid-template-columns: 1fr 3px 1fr;
+    align-items: end;
+  }
+  #childtot #eksbuku {
+    font-size: 10px;
+    display: grid;
+    grid-template-columns: 1fr 3px 1fr;
+    align-items: center;
+  }
+  #childBiaya #p3 {
+    justify-self: end;
+  }
+  #childBiaya #totalbiaya {
+    justify-self: end;
+  }
+  #childtot #pajak {
+    font-size: 10px;
+    display: grid;
+    grid-template-columns: 1fr 15px 1.5fr;
+    align-items: start;
+  }
+
+  #childtot #pajak #spajak {
+    border: none;
+    width: 150px;
+    box-sizing: border-box;
+    transition: 0.7s;
+    background: none;
+    font-size: 10px;
+  }
+  #childtot #pajak img {
+    position: relative;
+    width: 15px;
+  }
+
+  .list-biaya {
+    grid-area: biaya;
+    box-sizing: border-box;
+    background-color: var(--secondary-color);
+    border-radius: 7px;
+    box-shadow: 1px 1px 2px var(--quaternary-color);
+    display: grid;
+    align-items: center;
+    justify-items: center;
+  }
+
+  .box-biaya {
+    height: 90%;
+    width: 85%;
+    display: grid;
+    row-gap: 10px;
+    grid-template-rows: repeat(11, 1fr) 1.5fr;
+  }
+
+  .box-biaya div {
+    display: grid;
+    grid-template-columns: 120px 10px auto;
+    font-size: 10px;
+    align-self: center;
+    box-sizing: border-box;
+  }
+
+  .box-biaya div label {
+    align-self: center;
+  }
+
+  .box-biaya div input {
+    border: none;
+    border-bottom: 1px solid #0054a3;
+    padding: 5px;
+    transition: 0.7s;
+    font-size: 10px;
+  }
+
+  .box-biaya div input::placeholder {
+    color: rgb(184, 184, 184);
+    opacity: 1;
+  }
+
+  .box-biaya div input:hover {
+    background-color: #f0f0f0;
+    cursor: pointer;
+  }
+
+  .box-biaya div select {
+    border: none;
+    background: none;
+    border-bottom: 1px solid #0054a3;
+    padding: 5px;
+    transition: 0.7s;
+    color: rgb(184, 184, 184);
+    font-size: 10px;
+  }
+
+  .box-biaya div select:hover {
+    background-color: #f0f0f0;
+    cursor: pointer;
+  }
+
+  .simulasi-buku {
+    background-color: var(--secondary-color);
+    border-radius: 7px;
+    box-shadow: 1px 1px 2px var(--quaternary-color);
+    display: grid;
+    display: none;
+  }
+
+  .review-buku {
+    height: 90%;
+    width: 90%;
+    justify-self: center;
+    align-self: center;
+    display: grid;
+    grid-template-columns: 1fr 40px 3fr;
+    grid-template-rows: 40px 1fr 40px 80px;
+    grid-template-areas:
+      "judulp judulp judulp"
+      "punggung ukuran-3 depan-buku"
+      "ukuran-1 kosong ukuran-2"
+      "harga-buku harga-buku harga-buku";
+  }
+
+  .hanya {
+    grid-area: judulp;
+    justify-self: center;
+    font-weight: bold;
+    text-align: center;
+    color: #0054a3;
+  }
+
+  hjk {
+    color: blue;
+  }
+
+  hjk:hover {
+    text-decoration: underline;
+  }
+
+  .review-buku .punggung {
+    grid-area: punggung;
+    display: grid;
+  }
+
+  .punggung-buku {
+    border: 1px solid #9d9d9d;
+    box-sizing: border-box;
+    box-shadow: 2px 2px 2px #9d9d9d;
+    width: 50px;
+    height: 400px;
+    justify-self: center;
+    align-self: center;
+    display: grid;
+    grid-template-rows: 60px 1fr 50px;
+    color: black;
+    background-color: white;
+  }
+
+  .punggung-buku-inisial {
+    font-weight: 900;
+    font-size: large;
+    justify-self: center;
+    align-self: flex-start;
+    margin-top: 15px;
+  }
+
+  .punggung-buku .punggung-buku-judul {
+    font-weight: bold;
+    font-size: medium;
+    justify-self: center;
+    align-self: center;
+    writing-mode: vertical-rl;
+    text-orientation: mixed;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    max-height: 100%;
+  }
+
+  .review-buku .depan-buku {
+    grid-area: depan-buku;
+    display: grid;
+  }
+
+  .cover-buku {
+    border: 1px solid #9d9d9d;
+    box-sizing: border-box;
+    box-shadow: 2px 2px 2px #9d9d9d;
+    width: 280px;
+    height: 400px;
+    justify-self: center;
+    align-self: center;
+    display: grid;
+    grid-template-rows: 80px 1fr 3fr;
+    background-image: url(../../assets/template-buku.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: right;
+    color: black;
+  }
+
+  .cover-buku-judul {
+    width: 80%;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    font-size: large;
+    margin-left: 15%;
+    font-weight: 900;
+  }
+
+  .cover-buku .cover-buku-penulis {
+    width: 80%;
+    margin-top: 10px;
+    margin-left: 15%;
+    font-size: small;
+    align-self: center;
+  }
+
+  .review-buku .harga-buku {
+    grid-area: harga-buku;
+    padding-top: 15px;
+    padding-left: 30px;
+    display: grid;
+    grid-template-columns: 120px auto;
+  }
+
+  .review-buku .ukuran-1 {
+    grid-area: ukuran-1;
+    display: grid;
+    grid-template-rows: 1fr 2fr;
+  }
+
+  .review-buku .ukuran-2 {
+    grid-area: ukuran-2;
+    display: grid;
+    grid-template-rows: 1fr 2fr;
+  }
+
+  .review-buku .ukuran-box-1 {
+    border-left: 1px solid #0054a3;
+    border-right: 1px solid #0054a3;
+    border-bottom: 1px solid #0054a3;
+    justify-self: center;
+    box-sizing: border-box;
+  }
+
+  .review-buku .ukuran-box-2 {
+    justify-self: center;
+    align-self: flex-end;
+  }
+
+  .review-buku .box-1-width {
+    width: 50px;
+  }
+
+  .box-2-width {
+    width: 290px;
+  }
+
+  .review-buku .ukuran-3 {
+    grid-area: ukuran-3;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+  }
+
+  .ukuran-3 .ukuran-box-3 {
+    writing-mode: vertical-rl;
+    text-orientation: mixed;
+    transform: rotate(180deg);
+    align-self: center;
+    justify-self: start;
+  }
+
+  .ukuran-box-4 {
+    border-bottom: 1px solid #0054a3;
+    border-top: 1px solid #0054a3;
+    border-left: 1px solid #0054a3;
+    height: 400px;
+    align-self: center;
+  }
+}

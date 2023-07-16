@@ -1,0 +1,433 @@
+@import url("https://fonts.googleapis.com/css?family=Montserrat");
+
+* {
+  padding: 0;
+  margin: 0;
+  font-family: "Montserrat";
+  box-sizing: border-box;
+}
+
+:root {
+  --primary-color: #0054a3;
+  --secondary-color: #fdfdfd;
+  --tertiary-color: #e9ecf8;
+  --quaternary-color: rgba(157, 157, 157, 1);
+  --quinary-color: #9d9d9d;
+}
+
+/* .child {
+  margin-top: 10px;
+  width: 100%;
+  height: calc(100% - 80px);
+} */
+#childNaskah {
+  width: 100%;
+  height: 100%;
+  display: none;
+  grid-template-columns: 250px 1fr;
+  column-gap: 10px;
+}
+#childNaskah #kategori {
+  box-sizing: border-box;
+  background-color: white;
+  border-radius: 7px;
+  box-shadow: 1px 1px 0px #9d9d9d;
+  display: grid;
+  justify-items: center;
+  align-items: center;
+}
+#jdlkate {
+  transition: 0.7s;
+  margin-left: 15px;
+}
+#kategori #jdlkate:hover {
+  cursor: pointer;
+  transform: scale(1.03);
+}
+#kategori #bxkate {
+  width: 90%;
+  height: 90%;
+  display: grid;
+  grid-template-rows: 20px auto;
+}
+#bxkate #isikate {
+  width: 79%;
+  height: 95%;
+  margin-top: 5%;
+  margin-left: 20%;
+  display: grid;
+  grid-template-columns: 15px auto;
+  grid-template-rows: repeat(15, 1fr);
+  transform: scale(0);
+  opacity: 0;
+  transform-origin: top left;
+  transition: 0.7s;
+}
+#isikate div {
+  transition: 0.7s;
+}
+#isikate div:hover {
+  cursor: pointer;
+  transform: scale(1.03);
+}
+#isikate #kotate {
+  width: 5px;
+  height: 5px;
+  background-color: black;
+  align-self: center;
+}
+#isikate #kakate {
+  align-self: center;
+  font-size: small;
+}
+#childNaskah #buku {
+  box-sizing: border-box;
+  background-color: white;
+  border-radius: 7px;
+  box-shadow: 1px 1px 0px #9d9d9d;
+  display: grid;
+  grid-template-rows: 1fr 10fr;
+}
+#boke {
+  width: 95%;
+  height: 95%;
+  justify-self: center;
+  align-self: center;
+  display: grid;
+  grid-template-columns: 1fr repeat(4, 1px 1fr);
+  grid-template-rows: 1fr 25px 1fr;
+}
+#boxbook {
+  width: 150px;
+  height: 270px;
+  display: grid;
+  /* grid-template-rows: auto 15px 15px; */
+  row-gap: 3px;
+  justify-self: center;
+}
+#boxbook img {
+  justify-self: start;
+  width: 100%;
+  border-radius: 10px;
+  cursor: pointer;
+  align-self: center;
+}
+#bookjudul {
+  font-size: small;
+  font-weight: bold;
+}
+#bookpenulis {
+  font-size: small;
+}
+#childNaskah #buku #boke #lines {
+  box-sizing: border-box;
+  border-right: 1px solid #9d9d9d;
+  height: 75%;
+}
+#childNaskah #buku #boke #liness {
+  box-sizing: border-box;
+  border-top: 1px solid #9d9d9d;
+  width: 100%;
+  align-self: center;
+}
+#childNaskah #buku #kate {
+  box-sizing: border-box;
+  display: grid;
+  grid-template-columns: auto 1fr 150px;
+  width: 95%;
+  column-gap: 10px;
+  justify-self: center;
+}
+#kates {
+  font-weight: bold;
+  font-size: medium;
+  color: #0054a3;
+  align-self: center;
+  justify-self: flex-start;
+}
+#childNaskah #buku #kate #liness {
+  box-sizing: border-box;
+  border-top: 1px solid #9d9d9d;
+  width: 100%;
+  align-self: center;
+}
+#childNaskah #buku #kate #next {
+  display: grid;
+  grid-template-columns: 30px auto 30px;
+}
+#childNaskah #buku #kate #next #pref {
+  align-self: center;
+  justify-self: center;
+}
+#nom {
+  align-self: center;
+  justify-self: center;
+}
+#childNaskah #buku #kate #next #nex {
+  align-self: center;
+  justify-self: center;
+}
+
+@media only screen and (max-width: 1600px) and (min-width: 766px) {
+  #childNaskah {
+    width: 100%;
+    height: 100%;
+    display: none;
+    grid-template-columns: 1fr;
+    column-gap: 10px;
+  }
+  #childNaskah #kategori {
+    box-sizing: border-box;
+    background-color: white;
+    border-radius: 7px;
+    box-shadow: 1px 1px 0px #9d9d9d;
+    display: grid;
+    justify-items: center;
+    align-items: center;
+    display: none;
+  }
+  #jdlkate {
+    transition: 0.7s;
+    margin-left: 15px;
+  }
+  #kategori #jdlkate:hover {
+    cursor: pointer;
+    transform: scale(1.03);
+  }
+  #kategori #bxkate {
+    width: 90%;
+    height: 90%;
+    display: grid;
+    grid-template-rows: 20px auto;
+  }
+  #bxkate #isikate {
+    width: 79%;
+    height: 95%;
+    margin-top: 5%;
+    margin-left: 20%;
+    display: grid;
+    grid-template-columns: 15px auto;
+    grid-template-rows: repeat(15, 1fr);
+    transform: scale(0);
+    opacity: 0;
+    transform-origin: top left;
+    transition: 0.7s;
+  }
+  #isikate div {
+    transition: 0.7s;
+  }
+  #isikate div:hover {
+    cursor: pointer;
+    transform: scale(1.03);
+  }
+  #isikate #kotate {
+    width: 5px;
+    height: 5px;
+    background-color: black;
+    align-self: center;
+  }
+  #isikate #kakate {
+    align-self: center;
+    font-size: small;
+  }
+  #childNaskah #buku {
+    box-sizing: border-box;
+    background-color: white;
+    border-radius: 7px;
+    box-shadow: 1px 1px 0px #9d9d9d;
+    display: grid;
+    height: 100%;
+    grid-template-rows: 1fr 10fr;
+  }
+  #boke {
+    width: 95%;
+    height: 95%;
+    justify-self: center;
+    align-self: center;
+    display: grid;
+    grid-template-columns: 1fr repeat(4, 1px 1fr);
+    grid-template-rows: 1fr 25px 1fr;
+  }
+  #boxbook {
+    width: 130px;
+    height: 200px;
+    display: grid;
+    row-gap: 3px;
+    justify-self: center;
+    padding: 5px;
+  }
+  #boxbook img {
+    justify-self: start;
+    width: 100%;
+    border-radius: 10px;
+    cursor: pointer;
+    align-self: center;
+  }
+  #bookjudul {
+    font-size: 10px;
+    font-weight: bold;
+  }
+  #bookpenulis {
+    font-size: 10px;
+  }
+  #childNaskah #buku #boke #lines {
+    box-sizing: border-box;
+    border-right: 1px solid #9d9d9d;
+    height: 75%;
+  }
+  #childNaskah #buku #boke #liness {
+    box-sizing: border-box;
+    border-top: 1px solid #9d9d9d;
+    width: 100%;
+    align-self: center;
+  }
+  #childNaskah #buku #kate {
+    box-sizing: border-box;
+    display: grid;
+    grid-template-columns: auto 1fr 150px;
+    width: 95%;
+    column-gap: 10px;
+    justify-self: center;
+  }
+  #kates {
+    font-weight: bold;
+    font-size: medium;
+    color: #0054a3;
+    align-self: center;
+    justify-self: flex-start;
+  }
+  #childNaskah #buku #kate #liness {
+    box-sizing: border-box;
+    border-top: 1px solid #9d9d9d;
+    width: 100%;
+    align-self: center;
+  }
+  #childNaskah #buku #kate #next {
+    display: grid;
+    grid-template-columns: 30px auto 30px;
+  }
+  #childNaskah #buku #kate #next #pref {
+    align-self: center;
+    justify-self: center;
+  }
+  #nom {
+    align-self: center;
+    justify-self: center;
+  }
+  #childNaskah #buku #kate #next #nex {
+    align-self: center;
+    justify-self: center;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .child {
+    margin-top: 5px;
+    height: calc(100% - 70px);
+  }
+
+  #childNaskah {
+    width: 100%;
+    height: 100%;
+    display: none;
+    grid-template-columns: 1fr;
+    column-gap: 10px;
+    overflow-x: auto;
+  }
+
+  #childNaskah #kategori {
+    display: none;
+  }
+
+  #childNaskah #buku {
+    box-sizing: border-box;
+    background-color: white;
+    border-radius: 7px;
+    box-shadow: 1px 1px 0px #9d9d9d;
+    display: grid;
+    grid-template-rows: 1fr 10fr;
+  }
+  #boke {
+    width: 95%;
+    height: 100%;
+    justify-self: center;
+    align-self: center;
+    display: grid;
+    grid-template-columns: 1fr;
+    row-gap: 25px;
+    grid-template-rows: 1fr;
+  }
+  #boxbook {
+    width: 150px;
+    height: 270px;
+    display: grid;
+    row-gap: 3px;
+    justify-self: center;
+    border: 1px solid var(--primary-color);
+    border-radius: 10px;
+    box-shadow: 1px 1px 1px var(--quaternary-color);
+    padding: 5px 10px;
+  }
+  #boxbook img {
+    justify-self: start;
+    width: 100%;
+    border-radius: 10px;
+    cursor: pointer;
+    align-self: center;
+  }
+  #bookjudul {
+    font-size: small;
+    font-weight: bold;
+  }
+  #bookpenulis {
+    font-size: small;
+  }
+  #childNaskah #buku #boke #lines {
+    box-sizing: border-box;
+    border-right: 1px solid #9d9d9d;
+    height: 75%;
+  }
+  #childNaskah #buku #boke #liness {
+    box-sizing: border-box;
+    border-top: 1px solid #9d9d9d;
+    width: 100%;
+    align-self: center;
+  }
+  #childNaskah #buku #kate {
+    box-sizing: border-box;
+    display: grid;
+    grid-template-columns: auto 1fr 150px;
+    width: 95%;
+    column-gap: 10px;
+    justify-self: center;
+  }
+  #kates {
+    font-weight: bold;
+    font-size: medium;
+    color: #0054a3;
+    align-self: center;
+    justify-self: flex-start;
+  }
+  #childNaskah #buku #kate #liness {
+    box-sizing: border-box;
+    border-top: 1px solid #9d9d9d;
+    width: 100%;
+    align-self: center;
+  }
+  #childNaskah #buku #kate #next {
+    display: grid;
+    grid-template-columns: 30px auto 30px;
+  }
+  #childNaskah #buku #kate #next #pref {
+    align-self: center;
+    justify-self: center;
+  }
+  #nom {
+    align-self: center;
+    justify-self: center;
+  }
+  #childNaskah #buku #kate #next #nex {
+    align-self: center;
+    justify-self: center;
+  }
+}

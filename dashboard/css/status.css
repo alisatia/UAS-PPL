@@ -1,0 +1,1403 @@
+@import url("https://fonts.googleapis.com/css?family=Montserrat");
+
+* {
+  padding: 0;
+  margin: 0;
+  font-family: "Montserrat";
+  box-sizing: border-box;
+}
+
+:root {
+  --primary-color: #0054a3;
+  --secondary-color: #fdfdfd;
+  --tertiary-color: #e9ecf8;
+  --quaternary-color: rgba(157, 157, 157, 1);
+  --quinary-color: #9d9d9d;
+}
+
+/* .child {
+  margin-top: 10px;
+  width: 100%;
+  height: calc(100% - 80px);
+} */
+
+.child-status {
+  width: 100%;
+  height: 100%;
+  display: none;
+  grid-template-columns: 250px 1fr;
+  column-gap: 40px;
+}
+
+#bar {
+  box-sizing: border-box;
+  display: grid;
+  grid-template-rows: 80px auto;
+  row-gap: 10px;
+}
+
+#bar #barjudul {
+  height: 80px;
+  box-sizing: border-box;
+  background-color: white;
+  border-radius: 7px;
+  box-shadow: 1px 1px 0px #9d9d9d;
+  display: flex;
+  align-items: center;
+  padding: 10px;
+}
+
+.label-barbar {
+  color: #0054a3;
+  font-weight: bold;
+  font-size: 12px;
+  margin-left: 10px;
+}
+
+#barbar {
+  background-color: white;
+  color: #0054a3;
+  outline: none;
+  scroll-behavior: smooth;
+  border: none;
+  padding: 7px;
+  font-size: 14px;
+  font-weight: bold;
+  height: 100%;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+#childStatus #bar #riwayat {
+  height: 100%;
+  box-sizing: border-box;
+  background-color: white;
+  border-radius: 7px;
+  box-shadow: 1px 1px 0px #9d9d9d;
+  align-self: flex-start;
+  display: grid;
+  align-items: center;
+  justify-items: center;
+}
+#bxriwa {
+  width: 90%;
+  height: 90%;
+  font-size: 14px;
+}
+#bxriwa #titles {
+  font-weight: bold;
+}
+#bxriwa #poi {
+  width: 8px;
+  height: 8px;
+  background-color: #0054a3;
+  margin-top: 100%;
+  border-radius: 50%;
+}
+#bxriwa div {
+  width: 95%;
+  display: grid;
+  grid-template-columns: 15px 90px auto;
+  align-self: center;
+  margin-left: 4%;
+  display: none;
+  align-items: start;
+}
+#bxriwa div svv {
+  margin-top: 10px;
+}
+
+#childStatus #anime {
+  box-sizing: border-box;
+  display: grid;
+  grid-template-rows: 100px 1fr;
+  width: 100%;
+  row-gap: 10px;
+}
+
+#childStatus #anime #barH {
+  box-sizing: border-box;
+  background-color: white;
+  border-radius: 7px;
+  box-shadow: 1px 1px 0px #9d9d9d;
+  display: grid;
+}
+
+.status-bar-progres {
+  display: grid;
+  grid-template-columns: 40px repeat(6, 1fr 40px);
+  grid-template-rows: 40px auto;
+  width: 90%;
+  justify-self: center;
+  align-self: center;
+}
+
+.status-bar-progres .step-bar {
+  border-radius: 50%;
+  border: 1px solid #9d9d9d;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 600;
+  transition: 0.7s;
+}
+
+.status-bar-progres .step-leng {
+  background-color: #9d9d9d;
+  height: 7px;
+  align-self: center;
+  transition: 0.7s;
+}
+
+.status-bar-progres .active {
+  background-color: #0054a3;
+  border: 1px solid #0054a3;
+  color: white;
+}
+
+.status-bar-progres .deactive {
+  background-color: white;
+  border: 1px solid #9d9d9d;
+  color: black;
+}
+
+.status-bar-progres .step-name {
+  color: blue;
+  justify-self: center;
+  margin-top: 5px;
+  font-size: small;
+}
+
+#childStatus #anime #animasi {
+  box-sizing: border-box;
+  background-color: white;
+  border-radius: 7px;
+  box-shadow: 1px 1px 0px #9d9d9d;
+  /* background-image: url(../../assets/bookystatus.png);
+    background-repeat: no-repeat;
+    background-position: right bottom;
+    background-size: 15%; */
+  display: grid;
+}
+
+#anConfirm {
+  width: 100%;
+  height: 100%;
+  display: none;
+  grid-template-rows: 2fr 1fr;
+}
+
+#anConfirm #rev {
+  color: #0054a3;
+  font-size: 14px;
+  justify-self: center;
+  display: grid;
+  justify-items: center;
+  align-self: flex-start;
+}
+
+.booky-confirm {
+  width: 150px;
+  align-self: center;
+  justify-self: center;
+}
+
+#childStatus #anime #animasi #anreview {
+  width: 100%;
+  height: 100%;
+  display: grid;
+  display: none;
+  grid-template-rows: 2fr 1fr;
+}
+#anreview #rev {
+  color: #0054a3;
+  font-weight: bold;
+  font-size: 14px;
+  justify-self: center;
+  display: grid;
+  justify-items: center;
+  align-self: flex-start;
+}
+.booky-read {
+  width: 220px;
+  align-self: center;
+  justify-self: center;
+}
+#anmeet {
+  width: 80%;
+  height: 80%;
+  display: grid;
+  display: none;
+  grid-template-rows: 0.7fr 2fr 1fr;
+  align-self: center;
+  justify-self: center;
+  color: #0054a3;
+  font-size: small;
+}
+#meetone {
+  font-weight: bold;
+  font-size: 14px;
+  align-self: center;
+}
+#meettwo {
+  font-size: 14px;
+  align-self: flex-start;
+}
+#childStatus #anime #animasi #anmeet #meettwo #meetlist {
+  display: grid;
+}
+.naruto {
+  position: relative;
+  display: grid;
+  grid-template-columns: 1fr 15px 4fr;
+  grid-template-rows: repeat(3, 1fr);
+  row-gap: 25px;
+  margin-top: 25px;
+  display: none;
+}
+
+.ubah-jadwal {
+  position: absolute;
+  display: flex;
+  bottom: 0;
+  left: 0;
+  align-items: center;
+}
+
+.pengajuan {
+  position: absolute;
+  width: 200px;
+  height: 100px;
+  bottom: 0;
+  border: 1px solid #0054a3;
+  border-radius: 7px;
+  background-color: white;
+  display: grid;
+  grid-template-columns: 60px 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  align-items: center;
+  font-size: 14px;
+  padding: 10px;
+  display: none;
+}
+
+.pengajuan input {
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+.pengajuan button {
+  border: none;
+  border-radius: 5px;
+  height: 25px;
+  background-color: #0054a3;
+  color: white;
+  cursor: pointer;
+}
+
+.pengajuan img {
+  position: absolute;
+  top: -15px;
+  right: -15px;
+  width: 30px;
+  height: 30px;
+  padding: 5px;
+  background-color: white;
+  border: 1px solid #004688;
+  border-radius: 50%;
+  transition: transform 0.3s linear;
+  box-sizing: border-box;
+}
+
+.pengajuan img:hover {
+  cursor: pointer;
+  animation: animasi-pengajuan 0.3s linear;
+}
+
+@keyframes animasi-pengajuan {
+  0% {
+    transform: scale(1.05);
+  }
+  100% {
+    transform: scale(1.03);
+  }
+}
+
+#tombolAjukan {
+  background-color: #0054a3;
+  width: 100px;
+  height: 30px;
+  padding: 5px;
+  color: white;
+  text-align: center;
+  border-radius: 7px;
+  cursor: pointer;
+  transition: 0.3s;
+  box-sizing: border-box;
+}
+
+#tombolAjukan:hover {
+  background-color: #004688;
+}
+
+#childStatus #anime #animasi #anmeet #meetthree {
+  font-size: 14px;
+  padding-right: 25px;
+}
+.meetthree {
+  display: none;
+  padding-right: 50px;
+}
+#childStatus #anime #animasi #anmou {
+  display: grid;
+  display: none;
+  height: 90%;
+  width: 90%;
+  grid-template-rows: 1fr 1fr;
+  justify-self: center;
+  align-self: center;
+}
+#childStatus #anime #animasi #anmou #ppp {
+  margin: 0px auto 25px;
+}
+#childStatus #anime #animasi #anmou #isimou {
+  display: grid;
+}
+#childStatus #anime #animasi #anmou #mouupload {
+  display: grid;
+  grid-template-rows: 3fr 1fr;
+}
+#childStatus #anime #animasi #anmou #dropcontainer {
+  display: grid;
+  justify-items: center;
+  align-items: center;
+  padding-top: 2%;
+  padding-bottom: 3%;
+  height: 100%;
+  width: 55%;
+  justify-self: center;
+  border-radius: 10px;
+  border: 1px dashed #555;
+  color: #0054a3;
+  cursor: pointer;
+  transition: background 0.2s ease-in-out, border 0.2s ease-in-out;
+  box-sizing: border-box;
+}
+#childStatus #anime #animasi #anmou #dropcontainer:hover {
+  background: #eee;
+  border-color: #0054a3;
+}
+#childStatus #anime #animasi #anmou #dropcontainer:hover #drop-itle {
+  color: #0054a3;
+}
+#childStatus #anime #animasi #anmou #droptitle {
+  color: #0054a3;
+  font-size: small;
+  font-weight: bold;
+  text-align: center;
+  transition: color 0.2s ease-in-out;
+}
+#childStatus #anime #animasi #anmou #send {
+  width: 50px;
+  height: 30px;
+  margin-right: 13%;
+  justify-self: end;
+  color: white;
+  font-weight: bold;
+  background-color: #0054a3;
+  border-radius: 10px;
+  box-sizing: border-box;
+  cursor: pointer;
+  align-self: center;
+}
+#childStatus #anime #animasi #anmou #send:hover {
+  box-shadow: 1px 1px 0px rgb(85, 85, 85);
+}
+#childStatus #anime #animasi #anedit {
+  height: 80%;
+  width: 80%;
+  align-self: center;
+  justify-self: center;
+  display: grid;
+  display: none;
+}
+#informasi {
+  color: #0054a3;
+  font-size: small;
+  font-weight: bold;
+  justify-self: center;
+  justify-items: center;
+  display: grid;
+  grid-template-rows: 1fr 4fr;
+}
+#childStatus #anime #animasi #anedit p {
+  justify-self: center;
+  align-self: flex-start;
+}
+#childStatus #anime #animasi #anisbn {
+  height: 80%;
+  width: 80%;
+  align-self: flex-end;
+  justify-self: center;
+  display: grid;
+  display: none;
+}
+#childStatus #anime #animasi #anproduksi {
+  position: relative;
+  display: grid;
+  display: none;
+  height: 80%;
+  width: 80%;
+  align-self: center;
+  justify-self: center;
+}
+#childStatus #anime #animasi #informasi {
+  align-self: flex-end;
+}
+#andone {
+  display: grid;
+  display: none;
+  height: 80%;
+  width: 80%;
+  align-self: center;
+  justify-self: center;
+  grid-template-rows: 2fr 1fr;
+}
+#childStatus #anime #animasi #anrej {
+  display: grid;
+  display: none;
+  height: 80%;
+  width: 80%;
+  align-self: center;
+  justify-self: center;
+  grid-template-rows: 4fr 1fr 1fr;
+}
+#anrej #icon {
+  width: 210px;
+  justify-self: center;
+  background-image: url(../../assets/sad.gif);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+}
+#anrej #text {
+  color: #0054a3;
+  font-size: 14px;
+  text-align: center;
+  justify-self: center;
+  align-self: center;
+}
+
+.layouting {
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.booky-edit {
+  height: 30vh;
+}
+.dots-bars-6 {
+  width: 90px;
+  height: 30px;
+  align-self: flex-end;
+  justify-self: center;
+  --c: radial-gradient(farthest-side, #0054a3 93%, #0000);
+  background: var(--c) 0 0, var(--c) 50% 0;
+  background-size: 8px 8px;
+  background-repeat: no-repeat;
+  position: relative;
+  clip-path: inset(-200% -100% 0 0);
+  animation: db6-0 1.5s linear infinite;
+}
+.dots-bars-6:before {
+  content: "";
+  position: absolute;
+  width: 8px;
+  height: 12px;
+  background: #b7b8ba;
+  left: -16px;
+  top: 0;
+  animation: db6-1 1.5s linear infinite,
+    db6-2 0.5s cubic-bezier(0, 200, 0.8, 200) infinite;
+}
+.dots-bars-6:after {
+  content: "";
+  position: absolute;
+  inset: 0 0 auto auto;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: #0054a3;
+  animation: db6-3 1.5s linear infinite;
+}
+@keyframes db6-0 {
+  0%,
+  30% {
+    background-position: 0 0, 50% 0;
+  }
+  33% {
+    background-position: 0 100%, 50% 0;
+  }
+  41%,
+  63% {
+    background-position: 0 0, 50% 0;
+  }
+  66% {
+    background-position: 0 0, 50% 100%;
+  }
+  74%,
+  100% {
+    background-position: 0 0, 50% 0;
+  }
+}
+@keyframes db6-1 {
+  90% {
+    transform: translateY(0);
+  }
+  95% {
+    transform: translateY(15px);
+  }
+  100% {
+    transform: translateY(15px);
+    left: calc(100% - 8px);
+  }
+}
+@keyframes db6-2 {
+  100% {
+    top: -0.1px;
+  }
+}
+@keyframes db6-3 {
+  0%,
+  80%,
+  100% {
+    transform: translate(0);
+  }
+  90% {
+    transform: translate(26px);
+  }
+}
+
+/* Produksi */
+.produksi_cogs {
+  width: 100px;
+  height: 100px;
+  position: absolute;
+  left: 0;
+  margin-top: 4%;
+  left: calc(50% - 50px);
+  box-sizing: border-box;
+}
+.COGfirst {
+  position: relative;
+  width: 100px;
+  height: 100px;
+  -webkit-transform-origin: 50px 50px;
+  transform-origin: 50px 50px;
+  -webkit-animation: rotate 10s infinite linear;
+  animation: rotate 10s infinite linear;
+}
+.COGfirst div:nth-of-type(1) {
+  -webkit-transform: rotate(30deg);
+  transform: rotate(30deg);
+}
+.COGfirst div:nth-of-type(2) {
+  -webkit-transform: rotate(60deg);
+  transform: rotate(60deg);
+}
+.COGfirst div:nth-of-type(3) {
+  -webkit-transform: rotate(90deg);
+  transform: rotate(90deg);
+}
+.COGfirst div.firstPart {
+  width: 100px;
+  border-radius: 15px;
+  position: absolute;
+  height: 100px;
+  background: #0054a3;
+}
+.COGfirst div.firstHole {
+  width: 50px;
+  height: 50px;
+  border-radius: 100%;
+  background: white;
+  position: absolute;
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+}
+.COGsecond {
+  position: relative;
+  width: 80px;
+  -webkit-transform: rotate(16deg);
+  transform: rotate(16deg);
+  top: 28px;
+  -webkit-transform-origin: 40px 40px;
+  transform-origin: 40px 40px;
+  animation: rotate_left 10s 0.1s infinite reverse linear;
+  left: -24px;
+  height: 80px;
+}
+.COGsecond div:nth-of-type(1) {
+  -webkit-transform: rotate(30deg);
+  transform: rotate(30deg);
+}
+bo .COGsecond div:nth-of-type(2) {
+  -webkit-transform: rotate(60deg);
+  transform: rotate(60deg);
+}
+.COGsecond div:nth-of-type(3) {
+  -webkit-transform: rotate(90deg);
+  transform: rotate(90deg);
+}
+.COGsecond div.secondPart {
+  width: 80px;
+  border-radius: 10px;
+  position: absolute;
+  height: 80px;
+  background: #b7b8ba;
+}
+.COGsecond div.secondHole {
+  width: 40px;
+  height: 40px;
+  border-radius: 100%;
+  background: white;
+  position: absolute;
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+}
+.COGthird {
+  position: relative;
+  width: 60px;
+  top: -65px;
+  -webkit-transform-origin: 30px 30px;
+  transform-origin: 30px 30px;
+  -webkit-animation: rotate_left 10.2s 0.4s infinite linear;
+  animation: rotate_left 10.2s 0.4s infinite linear;
+  -webkit-transform: rotate(4deg);
+  transform: rotate(4deg);
+  left: 79px;
+  height: 60px;
+}
+.COGthird div:nth-of-type(1) {
+  -webkit-transform: rotate(30deg);
+  transform: rotate(30deg);
+}
+.COGthird div:nth-of-type(2) {
+  -webkit-transform: rotate(60deg);
+  transform: rotate(60deg);
+}
+.COGthird div:nth-of-type(3) {
+  -webkit-transform: rotate(90deg);
+  transform: rotate(90deg);
+}
+.COGthird div.thirdPart {
+  width: 60px;
+  border-radius: 8px;
+  position: absolute;
+  height: 60px;
+  background: #212121;
+}
+.COGthird div.thirdHole {
+  width: 30px;
+  height: 30px;
+  border-radius: 100%;
+  background: white;
+  position: absolute;
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+}
+
+@-webkit-keyframes rotate {
+  from {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  to {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+@keyframes rotate {
+  from {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  to {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+@-webkit-keyframes rotate_left {
+  from {
+    -webkit-transform: rotate(16deg);
+    transform: rotate(16deg);
+  }
+  to {
+    -webkit-transform: rotate(376deg);
+    transform: rotate(376deg);
+  }
+}
+@keyframes rotate_left {
+  from {
+    -webkit-transform: rotate(16deg);
+    transform: rotate(16deg);
+  }
+  to {
+    -webkit-transform: rotate(376deg);
+    transform: rotate(376deg);
+  }
+}
+@-webkit-keyframes rotate_right {
+  from {
+    -webkit-transform: rotate(4deg);
+    transform: rotate(4deg);
+  }
+  to {
+    -webkit-transform: rotate(364deg);
+    transform: rotate(364deg);
+  }
+}
+@keyframes rotate_right {
+  from {
+    -webkit-transform: rotate(4deg);
+    transform: rotate(4deg);
+  }
+  to {
+    -webkit-transform: rotate(364deg);
+    transform: rotate(364deg);
+  }
+}
+
+.pesawat {
+  background-image: url(../../assets/hore.gif);
+  background-repeat: no-repeat;
+  background-size: contain;
+  height: 100%;
+  width: 30%;
+  justify-self: center;
+}
+
+#loading {
+  display: none;
+  position: fixed;
+  z-index: 9999;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(255, 255, 255, 0.8);
+}
+
+#loading img {
+  width: 150px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+  #inputmouupload {
+    width: 30%;
+  }
+
+@media only screen and (max-width: 1600px) and (min-width: 766px) {
+    #inputmouupload {
+    width: 50%;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .child {
+    margin-top: 5px;
+    height: calc(100% - 70px);
+  }
+
+  .child-status {
+    width: 100%;
+    height: 100%;
+    display: none;
+    grid-template-columns: 1fr;
+    column-gap: 40px;
+    grid-template-rows: 1fr 500px;
+    row-gap: 10px;
+    grid-template-areas:
+      "animasi"
+      "riwayat";
+    overflow-x: auto;
+  }
+
+  #bar {
+    grid-area: riwayat;
+    box-sizing: border-box;
+    display: grid;
+    grid-template-rows: 80px auto;
+    row-gap: 10px;
+  }
+
+  #bar #barjudul {
+    height: 80px;
+    box-sizing: border-box;
+    background-color: white;
+    border-radius: 7px;
+    box-shadow: 1px 1px 0px #9d9d9d;
+    display: flex;
+    align-items: center;
+    padding: 10px;
+  }
+
+  .label-barbar {
+    color: #0054a3;
+    font-weight: bold;
+    font-size: 12px;
+    margin-left: 10px;
+  }
+
+  #barbar {
+    background-color: white;
+    color: #0054a3;
+    outline: none;
+    scroll-behavior: smooth;
+    border: none;
+    padding: 7px;
+    font-size: 12px;
+    font-weight: bold;
+    height: 100%;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+  }
+  #childStatus #bar #riwayat {
+    height: 100%;
+    box-sizing: border-box;
+    background-color: white;
+    border-radius: 7px;
+    box-shadow: 1px 1px 0px #9d9d9d;
+    align-self: flex-start;
+    display: grid;
+    align-items: center;
+    justify-items: center;
+  }
+  #bxriwa {
+    width: 90%;
+    height: 90%;
+    font-size: 12px;
+  }
+  #bxriwa #titles {
+    font-weight: bold;
+  }
+  #bxriwa #poi {
+    width: 8px;
+    height: 8px;
+    background-color: #0054a3;
+    margin-top: 100%;
+    border-radius: 50%;
+  }
+  #bxriwa div {
+    width: 95%;
+    display: grid;
+    grid-template-columns: 15px 90px auto;
+    align-self: center;
+    margin-left: 4%;
+    display: none;
+    align-items: start;
+  }
+  #bxriwa div svv {
+    margin-top: 10px;
+  }
+
+  #childStatus #anime {
+    grid-area: animasi;
+    box-sizing: border-box;
+    display: grid;
+    grid-template-rows: 100px 1fr;
+    width: 100%;
+    row-gap: 10px;
+  }
+
+  #childStatus #anime #barH {
+    box-sizing: border-box;
+    background-color: white;
+    border-radius: 7px;
+    box-shadow: 1px 1px 0px #9d9d9d;
+    display: grid;
+  }
+
+  .status-bar-progres {
+    display: grid;
+    grid-template-columns: 25px repeat(6, 1fr 25px);
+    grid-template-rows: 25px auto;
+    width: 90%;
+    justify-self: center;
+    align-self: center;
+  }
+
+  .status-bar-progres .step-bar {
+    border-radius: 50%;
+    border: 1px solid #9d9d9d;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 600;
+    transition: 0.7s;
+  }
+
+  .status-bar-progres .step-leng {
+    background-color: #9d9d9d;
+    height: 7px;
+    align-self: center;
+    transition: 0.7s;
+  }
+
+  .status-bar-progres .active {
+    background-color: #0054a3;
+    border: 1px solid #0054a3;
+    color: white;
+  }
+
+  .status-bar-progres .deactive {
+    background-color: white;
+    border: 1px solid #9d9d9d;
+    color: black;
+  }
+
+  .status-bar-progres .step-name {
+    color: blue;
+    justify-self: center;
+    margin-top: 5px;
+    font-size: 10px;
+  }
+
+  #childStatus #anime #animasi {
+    box-sizing: border-box;
+    background-color: white;
+    border-radius: 7px;
+    box-shadow: 1px 1px 0px #9d9d9d;
+    display: grid;
+  }
+
+  #anConfirm {
+    width: 100%;
+    height: 100%;
+    display: none;
+    grid-template-rows: 2fr 1fr;
+  }
+
+  #anConfirm #rev {
+    color: #0054a3;
+    font-size: 12px;
+    justify-self: center;
+    display: grid;
+    justify-items: center;
+    align-self: flex-start;
+    padding: 0 5px;
+    text-align: center;
+  }
+
+  .booky-confirm {
+    width: 150px;
+    align-self: center;
+    justify-self: center;
+  }
+
+  #childStatus #anime #animasi #anreview {
+    width: 100%;
+    height: 100%;
+    display: grid;
+    display: none;
+    grid-template-rows: 2fr 1fr;
+  }
+  #anreview #rev {
+    color: #0054a3;
+    font-weight: bold;
+    font-size: 12px;
+    justify-self: center;
+    display: grid;
+    justify-items: center;
+    align-self: flex-start;
+  }
+  .booky-read {
+    width: 220px;
+    align-self: center;
+    justify-self: center;
+  }
+  #anmeet {
+    width: 80%;
+    height: 80%;
+    display: grid;
+    display: none;
+    grid-template-rows: 0.7fr 2fr 1fr;
+    align-self: center;
+    justify-self: center;
+    color: #0054a3;
+    font-size: 12px;
+  }
+  #meetone {
+    font-weight: bold;
+    font-size: 12px;
+    align-self: center;
+  }
+  #meettwo {
+    font-size: 12px;
+    align-self: flex-start;
+  }
+  #childStatus #anime #animasi #anmeet #meettwo #meetlist {
+    display: grid;
+  }
+  .naruto {
+    position: relative;
+    display: grid;
+    grid-template-columns: 1fr 15px 4fr;
+    grid-template-rows: repeat(3, 1fr);
+    row-gap: 25px;
+    margin-top: 25px;
+    display: none;
+  }
+
+  .ubah-jadwal {
+    position: absolute;
+    display: flex;
+    bottom: 0;
+    left: 0;
+    align-items: center;
+  }
+
+  .pengajuan {
+    position: absolute;
+    width: 200px;
+    height: 100px;
+    bottom: 0;
+    right: 0;
+    border: 1px solid #0054a3;
+    border-radius: 7px;
+    background-color: white;
+    display: grid;
+    grid-template-columns: 60px 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    align-items: center;
+    font-size: 14px;
+    padding: 10px;
+    display: none;
+  }
+
+  .pengajuan input {
+    background: none;
+    border: none;
+    cursor: pointer;
+  }
+
+  .pengajuan button {
+    border: none;
+    border-radius: 5px;
+    height: 25px;
+    background-color: #0054a3;
+    color: white;
+    cursor: pointer;
+  }
+
+  .pengajuan img {
+    position: absolute;
+    top: -15px;
+    right: -15px;
+    width: 30px;
+    height: 30px;
+    padding: 5px;
+    background-color: white;
+    border: 1px solid #004688;
+    border-radius: 50%;
+    transition: transform 0.3s linear;
+    box-sizing: border-box;
+  }
+
+  .pengajuan img:hover {
+    cursor: pointer;
+    animation: animasi-pengajuan 0.3s linear;
+  }
+
+  @keyframes animasi-pengajuan {
+    0% {
+      transform: scale(1.05);
+    }
+    100% {
+      transform: scale(1.03);
+    }
+  }
+
+  #tombolAjukan {
+    background-color: #0054a3;
+    width: 100px;
+    height: 30px;
+    padding: 5px;
+    color: white;
+    text-align: center;
+    border-radius: 7px;
+    cursor: pointer;
+    transition: 0.3s;
+    box-sizing: border-box;
+  }
+
+  #tombolAjukan:hover {
+    background-color: #004688;
+  }
+
+  #childStatus #anime #animasi #anmeet #meetthree {
+    font-size: 12px;
+    padding-right: 0;
+  }
+  .meetthree {
+    display: none;
+    padding-right: 0;
+  }
+  #childStatus #anime #animasi #anmou {
+    display: grid;
+    display: none;
+    height: 90%;
+    width: 90%;
+    grid-template-rows: 1fr 1fr;
+    justify-self: center;
+    align-self: center;
+  }
+  #childStatus #anime #animasi #anmou #ppp {
+    margin: 0px auto 25px;
+  }
+  #childStatus #anime #animasi #anmou #isimou {
+    display: grid;
+  }
+  #childStatus #anime #animasi #anmou #mouupload {
+    display: grid;
+    grid-template-rows: 3fr 1fr;
+  }
+  #childStatus #anime #animasi #anmou #dropcontainer {
+    display: grid;
+    justify-items: center;
+    align-items: center;
+    padding-top: 2%;
+    padding-bottom: 3%;
+    height: 100%;
+    width: 55%;
+    justify-self: center;
+    border-radius: 10px;
+    border: 1px dashed #555;
+    color: #0054a3;
+    cursor: pointer;
+    transition: background 0.2s ease-in-out, border 0.2s ease-in-out;
+    box-sizing: border-box;
+  }
+  #childStatus #anime #animasi #anmou #dropcontainer:hover {
+    background: #eee;
+    border-color: #0054a3;
+  }
+  #childStatus #anime #animasi #anmou #dropcontainer:hover #drop-itle {
+    color: #0054a3;
+  }
+  #childStatus #anime #animasi #anmou #droptitle {
+    color: #0054a3;
+    font-size: small;
+    font-weight: bold;
+    text-align: center;
+    transition: color 0.2s ease-in-out;
+  }
+  #childStatus #anime #animasi #anmou #send {
+    width: 50px;
+    height: 30px;
+    margin-right: 13%;
+    justify-self: end;
+    color: white;
+    font-weight: bold;
+    background-color: #0054a3;
+    border-radius: 10px;
+    box-sizing: border-box;
+    cursor: pointer;
+    align-self: center;
+  }
+  #childStatus #anime #animasi #anmou #send:hover {
+    box-shadow: 1px 1px 0px rgb(85, 85, 85);
+  }
+  #childStatus #anime #animasi #anedit {
+    height: 80%;
+    width: 80%;
+    align-self: center;
+    justify-self: center;
+    display: grid;
+    display: none;
+  }
+  #informasi {
+    color: #0054a3;
+    font-size: 12px;
+    font-weight: bold;
+    margin-top: 8%;
+    justify-self: center;
+    justify-items: center;
+    display: grid;
+    grid-template-rows: 1fr 4fr;
+    text-align: center;
+  }
+  #childStatus #anime #animasi #anedit p {
+    justify-self: center;
+    align-self: flex-start;
+  }
+  #childStatus #anime #animasi #anisbn {
+    height: 80%;
+    width: 80%;
+    align-self: flex-end;
+    justify-self: center;
+    display: grid;
+    display: none;
+  }
+  #childStatus #anime #animasi #anproduksi {
+    position: relative;
+    display: grid;
+    display: none;
+    height: 80%;
+    width: 80%;
+    align-self: center;
+    justify-self: center;
+    padding-top: 200px;
+  }
+  #childStatus #anime #animasi #informasi {
+    align-self: flex-end;
+  }
+  #andone {
+    display: grid;
+    display: none;
+    height: 80%;
+    width: 80%;
+    align-self: center;
+    justify-self: center;
+    grid-template-rows: 2fr 1fr;
+  }
+  #childStatus #anime #animasi #anrej {
+    display: grid;
+    display: none;
+    height: 80%;
+    width: 80%;
+    align-self: center;
+    justify-self: center;
+    grid-template-rows: 4fr 1fr 1fr;
+  }
+  #anrej #icon {
+    width: 210px;
+    justify-self: center;
+    background-image: url(../../assets/sad.gif);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+  }
+  #anrej #text {
+    color: #0054a3;
+    font-size: 12px;
+    text-align: center;
+    justify-self: center;
+    align-self: center;
+  }
+  #inputmouupload {
+    width: 80%;
+  }
+
+  .status-bar-progres {
+    grid-template-columns: 30px repeat(6, 1fr 30px);
+    grid-template-rows: 30px auto;
+  }
+
+  .produksi_cogs {
+    width: 80px;
+    height: 80px;
+    border: 1px solid yellow;
+    margin-top: 2%;
+    left: calc(50% - 40px);
+  }
+
+  .COGfirst {
+    width: 80px;
+    height: 80px;
+    -webkit-transform-origin: 40px 40px;
+    transform-origin: 40px 40px;
+  }
+
+  .COGfirst div.firstPart {
+    width: 80px;
+    height: 80px;
+  }
+
+  .COGfirst div.firstHole {
+    width: 40px;
+    height: 40px;
+  }
+
+  .COGsecond {
+    width: 60px;
+    height: 60px;
+    -webkit-transform-origin: 30px 30px;
+    transform-origin: 30px 30px;
+    animation: rotate_left 10s 0.1s infinite reverse linear;
+  }
+
+  .COGsecond div.secondPart {
+    width: 60px;
+    height: 60px;
+  }
+
+  .COGsecond div.secondHole {
+    width: 30px;
+    height: 30px;
+  }
+
+  .COGthird {
+    width: 40px;
+    top: -65px;
+    -webkit-transform-origin: 20px 20px;
+    transform-origin: 20px 20px;
+    height: 40px;
+  }
+
+  .COGthird div.thirdPart {
+    width: 40px;
+    height: 40px;
+  }
+
+  .COGthird div.thirdHole {
+    width: 20px;
+    height: 20px;
+  }
+
+  .pesawat {
+    background-image: url(../../assets/hore.gif);
+    background-repeat: no-repeat;
+    background-size: contain;
+    height: 100%;
+    width: 50%;
+    justify-self: center;
+  }
+
+  #loading {
+    display: none;
+    position: fixed;
+    z-index: 9999;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.8);
+  }
+
+  #loading img {
+    width: 150px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+}

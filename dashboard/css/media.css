@@ -1,0 +1,302 @@
+@media only screen and (max-width: 1600px) {
+    .container {
+        grid-template-columns: 200px 5fr 20px;
+    }
+
+    .sidebar {
+        padding-left: 45px;
+        grid-template-rows: 70px auto;
+    }
+
+    .title .img {
+        width: 90%;
+        height: 60%;
+    }
+
+    .content {
+        grid-template-rows: 50px auto;
+        padding: 30px;
+        border-radius: 30px 10px 10px 30px;
+    }
+
+    .child-dash {
+        grid-template-rows: 90px 1fr;
+    }
+
+    .foto {
+        width: 30px;
+        height: 30px;
+        border: 1px solid #0054a3;
+    }
+
+    .unggah .img {
+        width: 25px;
+        height: 28px;
+    }
+
+    #chartkota {
+        height: 85%;
+        width: 85%;
+    }
+
+    #royalti {
+        padding: 10px;
+    }
+
+    .review-buku {
+        height: 95%;
+        grid-template-columns: 1fr 40px 4fr;
+        grid-template-rows: 40px 1fr 40px 80px;
+        font-size: small;
+    }
+
+    .box-2-width {
+        width: 204px;
+    }
+
+    .ukuran-box-4 {
+        height: 300px;
+    }
+
+    .cover-buku {
+        width: 204px;
+        height: 300px;
+        grid-template-rows: 55px 1fr 3fr;
+    }
+
+    .punggung-buku {
+        width: 25px;
+        height: 300px;
+    }
+
+    .cover-buku-judul {
+        font-size: large;
+    }
+
+    #cover {
+        grid-template-rows: 350px auto;
+    }
+
+    #child-biaya #blank {
+        height: 100%;
+    }
+
+    .status-bar-progres {
+        grid-template-columns: 30px repeat(6, 1fr 30px);
+        grid-template-rows: 30px auto;
+    }
+
+    .produksi_cogs {
+        width: 80px;
+        height: 80px;
+        border: 1px solid yellow;
+        margin-top: 2%;
+    }
+
+    .COGfirst {
+        width: 80px;
+        height: 80px;
+        -webkit-transform-origin: 40px 40px;
+        transform-origin: 40px 40px;
+    }
+
+    .COGfirst div.firstPart {
+        width: 80px;
+        height: 80px;
+    }
+
+    .COGfirst div.firstHole {
+        width: 40px;
+        height: 40px;
+    }
+
+    .COGsecond {
+        width: 60px;
+        height: 60px;
+        -webkit-transform-origin: 30px 30px;
+        transform-origin: 30px 30px;
+        animation: rotate_left 10s 0.1s infinite reverse linear;
+    }
+
+    .COGsecond div.secondPart {
+        width: 60px;
+        height: 60px;
+    }
+
+    .COGsecond div.secondHole {
+        width: 30px;
+        height: 30px;
+    }
+
+    .COGthird {
+        width: 40px;
+        top: -65px;
+        -webkit-transform-origin: 20px 20px;
+        transform-origin: 20px 20px;
+        height: 40px;
+    }
+
+    .COGthird div.thirdPart {
+        width: 40px;
+        height: 40px;
+    }
+
+    .COGthird div.thirdHole {
+        width: 20px;
+        height: 20px;
+    }
+
+    #andone {
+        grid-template-rows: 1.5fr 1fr;
+    }
+
+    #anrej #icon {
+        width: 150px;
+    }
+
+    .booky-read {
+        width: 150px;
+    }
+
+    .booky-confirm {
+        width: 100px;
+    }
+
+    #boxbook {
+        width: 120px;
+        height: 190px;
+    }
+
+    #child-guidelines #struktur,
+    #child-guidelines2x #struktur {
+        grid-template-rows: 80px 1fr;
+        padding-top: 15px;
+        padding-left: 15px;
+    }
+
+    .panduan1-gambar {
+        width: 80%;
+    }
+
+    .panduan2-gambar {
+        width: 30%;
+    }
+
+    .panduan3-gambar {
+        width: 55%;
+    }
+
+    .panduan6-gambar {
+        width: 65%;
+    }
+
+    #struktur #logo {
+        height: 60px;
+        width: 30px;
+    }
+
+    #hovfoto {
+        font-size: small;
+    }
+
+    .profile-user-box,
+    .boxx {
+        transform: scale(0.7);
+    }
+
+    #isi #h1 {
+        font-size: large;
+    }
+
+    #bookpenulis {
+        font-size: xx-small;
+    }
+
+    .booky-edit {
+        width: 200px;
+    }
+
+    #scr img {
+        width: 100px;
+    }
+
+    #scr img:hover {
+        transform: scale(5);
+    }
+
+    .panduan6-gambar:hover {
+        transform: scale(1.7);
+    }
+
+    .panduan5-gambar:hover {
+        transform: scale(1.5);
+    }
+
+    .txt,
+    #bookjudul,
+    .biaya .text,
+    .status .text,
+    .naskah .text,
+    .guidelines .text,
+    .guidelines2x .text,
+    .progress-bar-naskah,
+    #boxbiaya div,
+    #boxbiaya div select,
+    #boxbiaya div input,
+    #lasto {
+        font-size: x-small;
+    }
+
+    #isi div,
+    #strukturs div,
+    #jdlkate,
+    #nom,
+    #kates,
+    #anreview #rev,
+    #anConfirm #rev,
+    #anrej #text,
+    #chartother,
+    .label-barbar,
+    #bxriwa,
+    #barbar,
+    #revtext,
+    #revtot,
+    #protot,
+    #protext,
+    #seltot,
+    #seltext,
+    #toltot,
+    #toltext,
+    #sertot,
+    #sertext,
+    .akun,
+    .judul,
+    #anmeet,
+    #meetone,
+    #meettwo,
+    #ppp,
+    .dashboard .text {
+        font-size: small;
+    }
+
+    #revicon,
+    #proicon,
+    #selicon,
+    #tolicon,
+    #sericon {
+        width: 15px;
+    }
+
+    #proses,
+    #selesai,
+    #ditolak,
+    #penyerahan,
+    #direviu {
+        padding: 15px;
+    }
+
+    .punggung-buku .punggung-buku-judul {
+        font-size: small;
+        color: black;
+    }
+}

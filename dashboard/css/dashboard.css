@@ -1,0 +1,578 @@
+@import url("https://fonts.googleapis.com/css?family=Montserrat");
+
+* {
+  padding: 0;
+  margin: 0;
+  font-family: "Montserrat";
+  box-sizing: border-box;
+}
+
+:root {
+  --primary-color: #0054a3;
+  --secondary-color: #fdfdfd;
+  --tertiary-color: #e9ecf8;
+  --quaternary-color: rgba(157, 157, 157, 1);
+  --quinary-color: #9d9d9d;
+}
+
+.child {
+  margin-top: 10px;
+  width: 100%;
+  height: calc(100% - 50px);
+}
+
+/* dashbaord */
+.child-dash {
+  width: 100%;
+  max-height: 100%;
+  display: grid;
+  grid-template-rows: 120px 1fr;
+  row-gap: 10px;
+}
+
+.notif-dashboard {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  column-gap: 10px;
+}
+
+.notif-dashboard img {
+  width: 50px;
+  height: 50px;
+  padding: 10px;
+  border-radius: 7px;
+}
+
+.notif-dashboard div:nth-child(1) img {
+  background-color: #588bff;
+}
+
+.notif-dashboard div:nth-child(2) img {
+  background-color: #5c6dff;
+}
+
+.notif-dashboard div:nth-child(3) img {
+  background-color: #00ba34;
+}
+
+.notif-dashboard div:nth-child(4) img {
+  background-color: #ff626b;
+}
+
+.notif-dashboard div:nth-child(5) img {
+  background-color: #b15dff;
+}
+
+.telaah {
+  display: grid;
+  grid-template-columns: 1fr 50px;
+  background-color: var(--secondary-color);
+  box-shadow: 1px 1px 2px var(--quaternary-color);
+  border-radius: 7px;
+  width: calc(100% - 10px);
+  height: 100%;
+  padding: 25px;
+  align-items: center;
+}
+
+.proses {
+  display: grid;
+  grid-template-columns: 1fr 50px;
+  background-color: var(--secondary-color);
+  box-shadow: 1px 1px 2px var(--quaternary-color);
+  border-radius: 7px;
+  width: calc(100% - 10px);
+  height: 100%;
+  padding: 25px;
+  align-items: center;
+}
+
+.selesai {
+  display: grid;
+  grid-template-columns: 1fr 50px;
+  background-color: var(--secondary-color);
+  box-shadow: 1px 1px 2px var(--quaternary-color);
+  border-radius: 7px;
+  width: calc(100% - 10px);
+  height: 100%;
+  padding: 25px;
+  align-items: center;
+}
+
+.ditolak {
+  display: grid;
+  grid-template-columns: 1fr 50px;
+  background-color: var(--secondary-color);
+  box-shadow: 1px 1px 2px var(--quaternary-color);
+  border-radius: 7px;
+  width: calc(100% - 10px);
+  height: 100%;
+  padding: 25px;
+  align-items: center;
+}
+
+.penyerahan {
+  display: grid;
+  grid-template-columns: 1fr 50px;
+  background-color: var(--secondary-color);
+  box-shadow: 1px 1px 2px var(--quaternary-color);
+  border-radius: 7px;
+  width: calc(100% - 10px);
+  height: 100%;
+  padding: 25px;
+  align-items: center;
+}
+
+.child-biaya {
+  display: none;
+}
+
+.child-status {
+  display: none;
+}
+
+.child-naskah {
+  display: none;
+}
+
+.child-guidelines {
+  display: none;
+}
+
+.grafik-dashboard {
+  display: grid;
+  grid-template-columns: 1fr 1.5fr 1fr;
+  column-gap: 10px;
+}
+
+.grafik-kiri {
+  display: grid;
+  grid-template-rows: 1.5fr 1fr;
+  row-gap: 10px;
+}
+
+.chart-dash {
+  background-color: var(--secondary-color);
+  box-shadow: 1px 1px 2px var(--quinary-color);
+  border-radius: 7px;
+  padding: 15px;
+}
+
+.grafik-tengah {
+  display: grid;
+  grid-template-rows: 2fr 0.5fr;
+  row-gap: 10px;
+}
+
+.chart-royalti {
+  position: relative;
+  display: grid;
+  grid-template-rows: 30px 1fr;
+  row-gap: 10px;
+}
+
+.tombol-royalti {
+  width: 20px;
+  height: 20px;
+  position: absolute;
+  top: 7px;
+  left: 7px;
+  border-radius: 50%;
+  background-color: #00ba34;
+  cursor: pointer;
+}
+
+.text-royalti {
+  position: absolute;
+  height: 25px;
+  top: 5px;
+  left: 30px;
+  font-size: 15px;
+  transform-origin: left;
+  transform: scale(0);
+  padding: 5px;
+  transition: 0.3s;
+  background-color: rgba(255, 255, 255, 1);
+  box-shadow: 1px 1px 2px var(--quaternary-color);
+}
+
+.pilihan-royalti {
+  justify-self: center;
+  width: 90%;
+  grid-template-columns: 1fr 1fr;
+  display: none;
+}
+
+.semester {
+  width: 120px;
+  align-self: center;
+}
+
+.rentan {
+  justify-self: end;
+  display: grid;
+  width: 250px;
+  grid-template-columns: 30px 1fr 20px 30px 1fr;
+  align-self: center;
+  column-gap: 5px;
+  padding: 5px;
+}
+
+.biru {
+  background-color: var(--primary-color);
+}
+
+.strip {
+  align-self: center;
+  justify-self: center;
+}
+
+.hijau {
+  background-color: lime;
+}
+
+.total-royalti {
+  text-align: center;
+  font-size: 14px;
+}
+
+.rentan {
+  display: grid;
+}
+
+.tulisan {
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+  background-color: var(--secondary-color);
+  box-shadow: 1px 1px 2px var(--quaternary-color);
+  padding: 15px;
+}
+
+.content-tulisan table {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+.content-tulisan th,
+.content-tulisan td {
+  text-align: left;
+  padding: 8px;
+  font-size: 12px;
+}
+
+.content-tulisan th {
+  background-color: #f2f2f2;
+}
+
+.grafik-kanan {
+  display: grid;
+  grid-template-rows: 2fr 1fr;
+  row-gap: 10px;
+}
+
+.other {
+  height: 100%;
+  width: 100%;
+  background-color: var(--secondary-color);
+  border-radius: 10px;
+  box-shadow: 1px 1px 2px var(--quaternary-color);
+  padding: 15px;
+}
+
+.chart-other {
+  width: 100%;
+  height: 100%;
+  display: grid;
+}
+
+.status-bar-naskah {
+  width: 100%;
+  height: 30px;
+  background-color: #f2f2f2;
+  border-radius: 10px;
+  margin: 20px 0;
+  position: relative;
+}
+
+.progress-bar-naskah {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  height: 100%;
+  color: white;
+  font-size: small;
+}
+
+.status-bar-naskah .bar-naskah-0 {
+  border-radius: 10px;
+  margin-left: 0%;
+  width: 100%;
+  color: black;
+}
+
+.status-bar-naskah .bar-naskah-1 {
+  margin-left: 0%;
+  width: 15%;
+  background-color: #ffc107;
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+}
+
+.status-bar-naskah .bar-naskah-2 {
+  margin-left: 15%;
+  width: 15%;
+  background-color: #9c27b0;
+}
+
+.status-bar-naskah .bar-naskah-3 {
+  margin-left: 30%;
+  width: 15%;
+  background-color: #fb8c00;
+}
+
+.status-bar-naskah .bar-naskah-4 {
+  margin-left: 45%;
+  width: 40%;
+  background-color: #2196f3;
+}
+
+.status-bar-naskah .bar-naskah-5 {
+  margin-left: 85%;
+  width: 15%;
+  background-color: #4caf50;
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+
+.status-bar-naskah .bar-naskah-gagal {
+  border-radius: 10px;
+  width: 100%;
+  background-color: #f44336;
+}
+
+.status-bar-naskah .bar-persen {
+  border-radius: 10px;
+  color: black;
+  font-weight: bold;
+}
+
+@media only screen and (max-width: 1600px) and (min-width: 766px) {
+  .child {
+    margin-top: 7px;
+    height: calc(100% - 70px);
+  }
+
+  .child-dash {
+    grid-template-rows: 90px 1fr;
+    row-gap: 7px;
+    height: 100%;
+    width: 100%;
+    overflow-x: auto;
+    font-size: 12px;
+    border-radius: 7px;
+  }
+
+  .notif-dashboard {
+    column-gap: 7px;
+    font-size: 12px;
+  }
+
+  .notif-dashboard img {
+    width: 30px;
+    height: 30px;
+    padding: 5px;
+  }
+
+  .telaah {
+    grid-template-columns: 1fr 30px;
+    width: 100%;
+    padding: 15px;
+  }
+
+  .proses {
+    grid-template-columns: 1fr 30px;
+    width: 100%;
+    padding: 15px;
+  }
+
+  .selesai {
+    grid-template-columns: 1fr 30px;
+    width: 100%;
+    padding: 15px;
+  }
+
+  .ditolak {
+    grid-template-columns: 1fr 30px;
+    width: 100%;
+    padding: 15px;
+  }
+
+  .penyerahan {
+    grid-template-columns: 1fr 30px;
+    width: 100%;
+    padding: 15px;
+  }
+
+  .grafik-dashboard {
+    grid-template-columns: 1fr 1.7fr;
+    grid-template-rows: auto 1fr;
+    column-gap: 7px;
+    row-gap: 7px;
+    grid-template-areas:
+      "kiri tengah"
+      "kanan kanan";
+  }
+
+  .grafik-kiri {
+    grid-area: kiri;
+    grid-template-rows: auto auto;
+    row-gap: 7px;
+  }
+
+  .chart-dash {
+    padding: 10px;
+  }
+
+  .grafik-tengah {
+    grid-area: tengah;
+    grid-template-rows: auto 150px;
+    row-gap: 7px;
+  }
+
+  .grafik-kanan {
+    grid-area: kanan;
+    display: grid;
+    grid-template-rows: 1fr;
+    grid-template-columns: 1fr 2fr;
+    row-gap: 7px;
+    column-gap: 7px;
+  }
+
+  .other {
+    height: 50%;
+    align-self: flex-end;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .child-dash {
+    grid-template-rows: 70px 1fr;
+    row-gap: 5px;
+    height: 100%;
+    width: 100%;
+    overflow: auto;
+    font-size: 12px;
+  }
+
+  .notif-dashboard {
+    column-gap: 5px;
+    row-gap: 5px;
+    font-size: 12px;
+    flex-wrap: wrap;
+  }
+
+  .notif-dashboard img {
+    width: 30px;
+    height: 30px;
+    padding: 5px;
+  }
+
+  .telaah {
+    grid-template-columns: 1fr 30px;
+    width: calc(100% / 2 - 3px);
+    padding: 10px;
+  }
+
+  .proses {
+    grid-template-columns: 1fr 30px;
+    width: calc(100% / 2 - 3px);
+    padding: 10px;
+  }
+
+  .selesai {
+    grid-template-columns: 1fr 30px;
+    width: calc(100% / 2 - 3px);
+    padding: 10px;
+  }
+
+  .ditolak {
+    grid-template-columns: 1fr 30px;
+    width: calc(100% / 2 - 3px);
+    padding: 10px;
+  }
+
+  .penyerahan {
+    grid-template-columns: 1fr 30px;
+    width: calc(100% / 2 - 3px);
+    padding: 10px;
+  }
+
+  .grafik-dashboard {
+    grid-template-columns: 1fr;
+    grid-template-rows: auto auto auto;
+    column-gap: 0;
+    row-gap: 5px;
+    margin-top: 150px;
+    grid-template-areas:
+      "tengah"
+      "kiri"
+      "kanan";
+  }
+
+  .grafik-kiri {
+    grid-area: kiri;
+    grid-template-rows: 300px 200px;
+    row-gap: 5px;
+  }
+
+  .chart-dash {
+    border-radius: 7px;
+    padding: 10px;
+  }
+
+  .grafik-tengah {
+    grid-area: tengah;
+    grid-template-rows: 2fr 1fr;
+    row-gap: 5px;
+  }
+
+  .chart-royalti {
+    row-gap: 5px;
+  }
+
+  .text-royalti {
+    font-size: 12px;
+  }
+
+  .semester {
+    width: 90px;
+    align-self: center;
+  }
+
+  .rentan {
+    justify-self: end;
+    display: grid;
+    width: 180px;
+    grid-template-columns: 10px 1fr 10px 10px 1fr;
+    align-self: center;
+    column-gap: 5px;
+    padding: 5px;
+  }
+
+  .total-royalti {
+    text-align: center;
+    font-size: 12px;
+  }
+
+  .tulisan {
+    padding: 7px;
+  }
+
+  .grafik-kanan {
+    grid-area: kanan;
+    row-gap: 5px;
+  }
+}
