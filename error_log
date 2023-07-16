@@ -1,0 +1,16 @@
+[03-Jul-2023 04:30:05 UTC] PHP Fatal error:  Uncaught PHPMailer\PHPMailer\Exception: SMTP Error: Could not connect to SMTP host. in /home/itbpress/public_html/eazypublish/vendor/phpmailer/phpmailer/src/PHPMailer.php:2233
+Stack trace:
+#0 /home/itbpress/public_html/eazypublish/vendor/phpmailer/phpmailer/src/PHPMailer.php(2019): PHPMailer\PHPMailer\PHPMailer->smtpConnect()
+#1 /home/itbpress/public_html/eazypublish/vendor/phpmailer/phpmailer/src/PHPMailer.php(1678): PHPMailer\PHPMailer\PHPMailer->smtpSend()
+#2 /home/itbpress/public_html/eazypublish/vendor/phpmailer/phpmailer/src/PHPMailer.php(1516): PHPMailer\PHPMailer\PHPMailer->postSend()
+#3 /home/itbpress/public_html/eazypublish/mail.php(27): PHPMailer\PHPMailer\PHPMailer->send()
+#4 {main}
+  thrown in /home/itbpress/public_html/eazypublish/vendor/phpmailer/phpmailer/src/PHPMailer.php on line 2233
+[03-Jul-2023 04:30:08 UTC] PHP Fatal error:  Uncaught PHPMailer\PHPMailer\Exception: SMTP Error: Could not connect to SMTP host. in /home/itbpress/public_html/eazypublish/vendor/phpmailer/phpmailer/src/PHPMailer.php:2233
+Stack trace:
+#0 /home/itbpress/public_html/eazypublish/vendor/phpmailer/phpmailer/src/PHPMailer.php(2019): PHPMailer\PHPMailer\PHPMailer->smtpConnect()
+#1 /home/itbpress/public_html/eazypublish/vendor/phpmailer/phpmailer/src/PHPMailer.php(1678): PHPMailer\PHPMailer\PHPMailer->smtpSend()
+#2 /home/itbpress/public_html/eazypublish/vendor/phpmailer/phpmailer/src/PHPMailer.php(1516): PHPMailer\PHPMailer\PHPMailer->postSend()
+#3 /home/itbpress/public_html/eazypublish/mail.php(27): PHPMailer\PHPMailer\PHPMailer->send()
+#4 {main}
+  thrown in /home/itbpress/public_html/eazypublish/vendor/phpmailer/phpmailer/src/PHPMailer.php on line 2233
